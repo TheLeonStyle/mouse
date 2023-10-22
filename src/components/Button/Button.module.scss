@@ -1,0 +1,20 @@
+.button {
+	background-color: #2196f3;
+	border-radius: 20px;
+	cursor: pointer;
+	color: #fff;
+	padding: 10px 15px;
+	transition: background-color 0.3s ease 0s;
+
+	&.active,
+	&:hover {
+		background-color: #1977d3;
+	}
+
+	&.pink {
+		background-color: #ea4c89;
+		&:hover {
+			background-color: #f082ac;
+		}
+	}
+}

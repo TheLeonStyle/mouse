@@ -1,0 +1,36 @@
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+
+	padding: 15px 0;
+	margin-top: 15px;
+
+	border-top: 1px solid #e3e3e3;
+
+	@media (max-width: 600px) {
+		flex-direction: column;
+	}
+
+	ul {
+		display: flex;
+		gap: 15px;
+
+		@media (max-width: 600px) {
+			flex-wrap: wrap;
+		}
+		li {
+			a {
+				color: #2196f3;
+				&:hover,
+				&:focus {
+					color: #1977d3;
+				}
+			}
+		}
+	}
+	p {
+		white-space: nowrap;
+	}
+}

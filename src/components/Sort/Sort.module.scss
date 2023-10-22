@@ -1,0 +1,45 @@
+.sort {
+	position: relative;
+	p {
+		text-align: right;
+		span {
+			font-weight: 600;
+			color: #ea4c89;
+			cursor: pointer;
+		}
+	}
+
+	.popup {
+		position: absolute;
+		right: -15px;
+
+		text-align: right;
+		border-radius: 10px;
+		overflow: hidden;
+		box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+
+		@media (max-width: 1280px) {
+			right: 0;
+		}
+
+		li {
+			cursor: pointer;
+			padding: 10px 15px;
+			background-color: #f5f7fa;
+			transition:
+				background-color,
+				color 0.3s ease 0s;
+
+			display: flex;
+			justify-content: flex-end;
+			gap: 5px;
+
+			&.active,
+			&:hover,
+			&:focus {
+				color: #fff;
+				background-color: #ea4c89;
+			}
+		}
+	}
+}
